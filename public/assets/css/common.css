@@ -1,6 +1,6 @@
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 190px;
+    margin-bottom: 275px;
 	background: url('../img/bodyBG.png');
 }
 
@@ -61,7 +61,6 @@ html {
 
 #footer ul{
     list-style: none;
-    display: inline;
 }
 
 /*--------------------------------------------------------*/
@@ -164,6 +163,10 @@ hr {
 
 .spacer {
     margin-bottom: 10px;
+}
+
+.mainSpacer {
+    margin-bottom: 65px;
 }
 
 
