@@ -1,0 +1,171 @@
+body {
+	background: url('../img/bodyBG.png');
+}
+
+.header { /* The one that stretches all the way across the browser */
+    /*--positioning--*/
+    position: relative;
+    width: 100%;
+    height: auto;
+    /*--styling--*/
+    background: url(../img/headerBG.png);
+    box-shadow: 1px 3px 7px;
+}
+
+.header hr {
+    color: black;
+    box-shadow: 2px 2px 3px;
+}
+
+.header h1 {
+    font-size: 3.5em;
+}
+
+.header p {
+    font-size: 2em;
+    text-align: right;
+}
+
+.headWrap {
+    /*--positioning--*/
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 10px;
+    /*--styling--*/
+    color: #A55D35; /* RUST for text color */
+    text-shadow: 2px 2px 2px black;
+}
+
+/*
+#nav {
+	border: 0;
+	border-radius: 0;
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    //table-layout: fixed;
+    float:none;
+    text-align: center;
+}
+
+.nav li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+*/
+
+.global {
+	text-align: center;
+}
+
+
+.field {
+	text-align: center;
+	/padding: 10px;
+} 
+
+label {
+	display: block;
+}
+
+form {
+	padding: 10px;
+	/font-size: 1.2em;
+}
+
+form label {
+	/padding: 5px;
+}
+
+form input {
+	border: none;
+	padding: 5px;
+	margin-bottom: 20px;
+	box-shadow: 2px 2px 3px black;
+	border-radius: 5px;
+}
+
+.errors {
+	color: red;
+	font-weight: bold;
+}
+
+.auto-bg {
+	display: inline-block;
+}
+
+.center {
+	width: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#alert {
+	box-shadow: 1px 1px 5px black;
+}
+
+.content {
+	text-align: left;
+	margin: 10px;
+	padding: 10px;
+	background: url('../img/textBG.png');
+	box-shadow: 1px 1px 5px;
+    border-radius: 5px; 
+}
+
+.right-gap-lg {
+	margin-right: 150px;
+}
+
+.right-gap-md {
+	margin-right: 80px;
+}
+
+.left-gap {
+	margin-left: 40px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.auto-margin {
+	float: none !important;
+	margin: 0 auto;
+	display: table;
+}
+
+.navbar-shift-left {
+	padding-left: -122px;
+}
+
+.navbar-shift-right {
+	padding-right: 122px;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-top: 5px !important;
+}
+
+.content-no-margin {
+	text-align: left;
+	padding: 10px;
+	background: url('../img/textBG.png');
+	box-shadow: 1px 1px 5px;
+    border-radius: 5px; 
+}
+
+/*------------------------------*/
+
+.bg {
+	background: url('../img/textBG.png');
+}
+
+.content {
+
+}

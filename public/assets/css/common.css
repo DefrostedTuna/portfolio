@@ -1,0 +1,312 @@
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 190px;
+	background: url('../img/bodyBG.png');
+}
+
+.header { /* The one that stretches all the way across the browser */
+    /*--positioning--*/
+    position: relative;
+    width: 95%;
+    margin: auto;
+    height: auto;
+}
+
+.header hr {
+    color: grey;
+    width: 95%;
+    box-shadow: 1px 1px 0px;
+}
+
+.header h1 {
+    font-size: 3.5em;
+}
+
+.header p {
+    font-size: 2em;
+    text-align: right;
+}
+
+.headWrap {
+    max-width: 980px;
+    width:100%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    white-space: normal; 
+    word-wrap:break-word; 
+    word-break:break-word;
+}
+
+/*-------------------------------------*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background: url(../img/headerBG.png);
+  color: white;
+  /background-color: #f5f5f5;
+}
+
+#footer ul{
+    list-style: none;
+    display: inline;
+}
+
+/*--------------------------------------------------------*/
+
+hr {
+    color: grey;
+    /width: 95%;
+    box-shadow: 1px 1px 0px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.il-block {
+    display: inline-block;
+}
+
+.il {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.bg {
+    background: url('../img/textBG.png');
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+}
+
+.padding-all {
+    padding: 10px;
+}
+
+.padding-none {
+    padding: 0px !important;
+}
+
+.padding-vertical {
+    padding: 10px 0px 10px 0px;
+}
+
+.padding-horizontal {
+    padding: 0px 10px 0px 10px;
+}
+
+.padding-top {
+    padding-top: 10px;
+}
+
+.padding-right {
+    padding-right: 10px;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
+.padding-left {
+    padding-left: 10px;
+}
+
+.margin-all {
+    margin: 1%;
+}
+
+.margin-none {
+    margin: 0px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.margin-right {
+    margin-right: 10px;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+.no-float {
+    float: none !important;
+}
+
+.spacer {
+    margin-bottom: 10px;
+}
+
+
+h1, h2, h3, h4, h5 {
+    margin-top: 5px !important;
+}
+
+.center {
+    width: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.content {
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+form {
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+label {
+    display: block;
+}
+
+input, select, textarea {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px;
+    padding: 5px;
+}
+
+input[type=checkbox] {
+    box-shadow: none;
+}
+
+.border {
+    border-radius: 5px;
+}
+
+.auto-margin {
+    float: none !important;
+    margin: 0 auto;
+    display: table;
+}
+
+.errors {
+    color: red;
+    font-weight: bold;
+}
+
+img {
+    max-width: 98%;
+    margin: 1%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .35);
+    border-radius: 10px;
+}
+
+.plain-img {
+    box-shadow: 0px 0px 0px;
+    border-radius: 0px;
+}
+
+.container {
+    margin-bottom: 20px !important;
+}
+
+iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.plain-link-white {
+    text-decoration: none;
+    color: white;
+}
+
+.plain-link-white:hover {
+    text-decoration: underline;
+    color: white;
+
+}
+
+.plain-link-black {
+    text-decoration: none;
+    color: black;
+}
+
+.plain-link-black:hover {
+    text-decoration: underline;
+    color: black;
+
+}
+
+.word-wrap {
+    white-space: normal; 
+    word-wrap:break-word; 
+    word-break:break-word;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+#contactInfo li {
+    margin-bottom: 10px;
+}
+
+.ul {
+    text-decoration: underline;
+}
+
+textarea {
+    height: 450px;
+}
+
+/* Vertical divider ------------------------------------*/
+
+.navbar .divider-vertical {
+height: 50px;
+margin: 0 9px;
+border-right: 1px solid #ffffff;
+border-left: 1px solid #f2f2f2;
+}
+
+.navbar-inverse .divider-vertical {
+border-right-color: #222222;
+border-left-color: #111111;
+}
+
+@media (max-width: 767px) {
+.navbar-collapse .nav > .divider-vertical {
+    display: none;
+  }
+}
+
+/*end vertical divider ------------------------------------*/
