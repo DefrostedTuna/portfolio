@@ -1,6 +1,6 @@
 /bootstrap/compiled.php
 /vendor
-/public/portfolio
+/public/portfolio/*
 composer.phar
 .env.local.php
 .env.php
