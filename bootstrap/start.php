@@ -27,7 +27,7 @@ $app = new Illuminate\Foundation\Application;
 $env = $app->detectEnvironment(array(
 
 	'local' => array('MININT-9BESIED'),
-	'staging' => array('www.rickbennettcoding.com'),
+	'production' => array('rickbennettcoding.com'),
 
 ));
 
