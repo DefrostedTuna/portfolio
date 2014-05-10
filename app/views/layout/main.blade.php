@@ -87,7 +87,6 @@
 				<div class="col-md-3 col-med-offset-9">
 					@yield('content-right')
 				</div>
-				<div class="row">&nbsp</div>
 
 
 			</div><!--end row-->
