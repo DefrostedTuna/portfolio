@@ -14,6 +14,7 @@
 				<li>Email: <br> {{ Homepage::find(1)->email }}</li>
 			</ul>
 		</div>
+		<br>
 
 		<div class="col-md-4 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4">
 			<a href="http://www.laravel.com/" target="_blank"><img class="plain-img" src="{{ URL::asset('assets/img/laravel-footer.png') }}"></a>
