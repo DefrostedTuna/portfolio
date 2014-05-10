@@ -1,6 +1,7 @@
 /bootstrap/compiled.php
 /vendor
 /public/portfolio/*
+/public/assets/img/homepage
 composer.phar
 .env.local.php
 .env.php

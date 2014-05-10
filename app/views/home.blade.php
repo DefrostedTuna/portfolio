@@ -20,6 +20,12 @@ Home
 			@else
 				<p>You are not signed in.</p>
 			@endif-->
+			@if($homepage->image)
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<img src="{{ asset($homepage->image) }}">
+				</div>
+			@endif
+
 			{{ $homepage->about }}
 
 	</div>

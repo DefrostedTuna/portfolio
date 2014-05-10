@@ -17,7 +17,7 @@
 
 	<div class="col-md-8" style="padding: 0px;">
 		<div class="center bg padding-all" style="margin-bottom: 20px;">
-			<form method="post" action="{{ URL::route('homepage-edit')}}">
+			<form method="post" action="{{ URL::route('homepage-edit')}}" enctype="multipart/form-data">
 			<h3>Headline</h3>
 			<div class="field">
 				<input type="text" id="headline" name="headline" class="padding-all center-text" style="width:50%"
@@ -33,6 +33,25 @@
 
 		<div class="content bg">
 			<h3 class="center">About</h3>
+			<hr>
+
+
+			<div class="field center">	
+				@if($errors->has('image'))
+					<div class="errors">
+						{{ $errors->first('image') }}
+					</div>
+				@endif
+				<div class="padding-bottom">
+					<label for="image">Cover image:</label>
+					<input type="file" name="image" id="image" class="center" style="background: white; padding: 7px;"><br>
+				</div>
+				<div class="padding-bottom">
+					<input type="checkbox" name="removeImg" id="removeImg" class="btn" style="width: 20px; height: 20px; margin-right: 10px">
+					<label for="removeImg" class="il btn btn-danger">Remove image</label>
+				</div>
+			</div>
+
 			@if($errors->has('about'))
 				<div class="errors">
 					{{ $errors->first('about') }}

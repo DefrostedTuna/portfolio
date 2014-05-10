@@ -28,8 +28,10 @@ class HomeController extends BaseController {
 			'email' 		=> 'email',
 			'phone'			=> 'min:10|max:15',
 			'location'		=> 'required|min:3',
-			'headline' 		=> 'min:3|max:50'
+			'headline' 		=> 'min:3|max:50',
+			'image' 		=> 'image',
 			));
+
 
 		if($validator->fails()) {
 			return Redirect::route('homepage-edit')
@@ -37,7 +39,42 @@ class HomeController extends BaseController {
 					->withInput();
 		} else {
 
-			$homepage = 	Homepage::where('id', '=', '1')
+			$homepage = Homepage::findOrFail(1);
+				
+			$storedPath 	= '';
+			$publicPath 	= '';
+			$filename 		= '';
+
+			if($homepage->image) {
+				$storedPath = $homepage->image;
+			} 
+
+			if(Input::hasFile('image')) {
+
+				$file 			= Input::file('image'); 
+				$publicPath 	= '/assets/img/homepage/';
+				$fullPath		= public_path() . $publicPath;
+				$ext 			= explode(".", $file->getClientOriginalName());
+				$ext 			= strtolower(end($ext));
+				$filename 		= 'cover.' . $ext;
+				$uploaded 		= $file->move($fullPath, $filename);
+				$storedPath		= $publicPath . $filename;
+					
+			}
+
+			if(Input::has('removeImg') && $homepage->image) {
+
+				if(file_exists(public_path() . $homepage->image)) {
+
+					//remove file from path
+					unlink(public_path() . $homepage->image);
+
+				}
+
+				$storedPath = '';
+			}
+
+			$update = 	Homepage::where('id', '=', '1')
 									->update(array(
 				'about' 		=> Input::get('about'),
 				'first_name' 	=> Input::get('first_name'),
@@ -45,10 +82,11 @@ class HomeController extends BaseController {
 				'email' 		=> Input::get('email'),
 				'phone'			=> Input::get('phone'),
 				'location'		=> Input::get('location'),
-				'headline'		=> Input::get('headline')
+				'headline'		=> Input::get('headline'),
+				'image'			=> $storedPath,
 			));
 
-			if($homepage) {
+			if($update) {
 				return 	Redirect::route('admin-dashboard')
 						->with('global', 'Homepage has been updated.')
 						->with('alert', 'success');
