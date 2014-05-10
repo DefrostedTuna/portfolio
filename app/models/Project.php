@@ -11,7 +11,7 @@ class Project extends Eloquent implements SluggableInterface {
         'save_to'    => 'slug',
     );
 
-	protected $fillable = array("name", "link", "slug", "images", "description", "type", "featured");
+	protected $fillable = array("name", "link", "slug", "images", "description", "type", "featured", "show",);
 
 	public static function getByAll($sortBy = 'created_at', $direction = 'desc') {
 		return 	DB::table('projects')
