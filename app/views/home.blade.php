@@ -21,7 +21,7 @@ Home
 				<p>You are not signed in.</p>
 			@endif-->
 			@if($homepage->image)
-				<div class="col-lg-2 col-sm-4 padding-all hidden-xs">
+				<div class="col-lg-2 col-sm-4 padding-all col-xs-12">
 						<div class="center">
 							<img src="{{ asset($homepage->image) }}" class="center">
 						</div>
