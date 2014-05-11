@@ -6,39 +6,28 @@ Home
 
 @section('page-header')
 	<div class="headWrap">
-		<h1>{{ $homepage->first_name }} {{ $homepage->last_name }}</h1>
+		<h1>Rick|<span style="font-weight: bold">Bennett</span></h1>
 		<hr>
-		<p>{{ $homepage->headline }}</p>
+		<p style="font-style: italic">{{ $homepage->headline }}</p>
 	</div><!--headWrap-->
 @stop
 
 @section('content')
 <div class="row">
-	<div class="content bg col-md-8" style="overflow: auto">
+	<div class="content bg col-lg-10 col-md-10 col-md-offset-1 col-lg-offset-1" style="overflow: auto">
 			<!--@if(Auth::check())
 				<p>Hello, {{ Auth::user()->username }}.</p>
 			@else
 				<p>You are not signed in.</p>
 			@endif-->
 			@if($homepage->image)
-				<div class="col-md-4 col-sm-4 col-xs-6">
+				<div class="col-lg-3 col-md-4 col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3 padding-all">
 					<img src="{{ asset($homepage->image) }}">
 				</div>
 			@endif
-
+			<div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
 			{{ $homepage->about }}
-
-	</div>
-	<div class="content bg col-md-3 col-md-offset-1 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
-		<h3 class="center-text" style="text-decoration: underline;">{{ $homepage->first_name }} {{ $homepage->last_name }}</h3>
-		<ul id="contactInfo" class="center-text il" style="list-style: none;">
-			<li>Email<br> {{ $homepage->email }}</li>
-			
-			@if($homepage->phone)
-				<li>Phone<br>{{ $homepage->phone }}</li>
-			@endif
-			<li>Location<br>{{ $homepage->location }}</li>
-		</ul>
+			</div>
 	</div>
 </div>
 <div class="content margin-bottom"></div>
