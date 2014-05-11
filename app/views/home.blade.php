@@ -6,7 +6,7 @@ Home
 
 @section('page-header')
 	<div class="headWrap">
-		<h1>Rick|<span style="font-weight: bold">Bennett</span></h1>
+		<h1>Rick <span style="font-weight: bold">Bennett</span></h1>
 		<hr>
 		<p style="font-style: italic">{{ $homepage->headline }}</p>
 	</div><!--headWrap-->
@@ -21,11 +21,11 @@ Home
 				<p>You are not signed in.</p>
 			@endif-->
 			@if($homepage->image)
-				<div class="col-lg-3 col-md-4 col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3 padding-all">
+				<div class="col-lg-2 col-md-4 col-sm-4 col-sm-offset-0 padding-all hidden-xs">
 					<img src="{{ asset($homepage->image) }}">
 				</div>
 			@endif
-			<div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
+			<div class="col-lg-10 col-md-8 col-sm-8 col-xs-12">
 			{{ $homepage->about }}
 			</div>
 	</div>
