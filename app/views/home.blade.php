@@ -21,11 +21,13 @@ Home
 				<p>You are not signed in.</p>
 			@endif-->
 			@if($homepage->image)
-				<div class="col-lg-2 col-md-4 col-sm-4 col-sm-offset-0 padding-all hidden-xs">
-					<img src="{{ asset($homepage->image) }}">
+				<div class="col-lg-2 col-sm-4 padding-all hidden-xs">
+						<div class="center">
+							<img src="{{ asset($homepage->image) }}" class="center">
+						</div>
 				</div>
 			@endif
-			<div class="col-lg-10 col-md-8 col-sm-8 col-xs-12">
+			<div class="col-lg-10 col-sm-8 col-xs-12">
 			{{ $homepage->about }}
 			</div>
 	</div>
