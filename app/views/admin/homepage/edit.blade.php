@@ -20,7 +20,7 @@
 			<form method="post" action="{{ URL::route('homepage-edit')}}" enctype="multipart/form-data">
 			<h3>Headline</h3>
 			<div class="field">
-				<input type="text" id="headline" name="headline" class="padding-all center-text" style="width:50%"
+				<input type="text" id="headline" name="headline" class="padding-all center-text" style="width: 98%; max-width: 400px"
 						value="{{ $homepage->headline }}" placeholder="{{ $homepage->headline }}">	
 			</div>
 			@if($errors->has('headline'))
