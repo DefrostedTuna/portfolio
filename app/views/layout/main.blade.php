@@ -58,9 +58,13 @@
 		<div class="header">
 			@yield('page-header')
 		</div>
+		
 		<br>
+		
 		<hr style="width: 95%">
+		
 		<br>
+		
 		<div class="container-fluid padding-none" style="max-width: 95%;"><!--Main content container-->
 			<!--This is for any global messages that might be passed through to the user-->
 			<div class="container center-text"><!--Global alert container-->
@@ -72,25 +76,16 @@
 				@endif
 			</div><!--end row/container-->
 		
-			<div class="">
+			<div class=""><!--start main-->
+				
 				<!--Main content that is to take up the entire page-->
 				<div class="center container">
 					@yield('content')
 				</div>
 
-				<!--Main content that is to be split to the left-->
-				<div class="col-med-9">
-					@yield('content-left')
-				</div>
-				
-				<!--Side content that is to be floated to the right in a smaller box-->
-				<div class="col-md-3 col-med-offset-9">
-					@yield('content-right')
-				</div>
-
-
-			</div><!--end row-->
+			</div><!--end main-->
 		</div><!--end container-->
+		
 		<div id="footer">
 			@include('layout.footer')
 	    </div>
