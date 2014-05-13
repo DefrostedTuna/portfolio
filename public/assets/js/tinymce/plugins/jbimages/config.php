@@ -38,8 +38,8 @@
 | -------------------------------------------------------------------*/
 
 	
-	$config['img_path'] = "/assets/img/uploaded"; // Relative to domain name
-	$config['upload_path'] = /*$_SERVER['DOCUMENT_ROOT'] . $config['img_path'];*/ "/assets/img/uploaded" // Physical path. [Usually works fine like this]
+	$config['img_path'] = "/assets/img/uploaded/"; // Relative to domain name
+	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'] . $config['img_path']; // Physical path. [Usually works fine like this]
 
 
 /*-------------------------------------------------------------------
