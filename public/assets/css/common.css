@@ -105,6 +105,10 @@ hr {
     padding: 10px;
 }
 
+.padding-all-20 {
+    padding: 20px;
+}
+
 .padding-none {
     padding: 0px !important;
 }
