@@ -59,7 +59,7 @@ class AccountController extends BaseController {
 
 		$validator = Validator::make(Input::all(), 
 			array(
-				'email' 			=> 'required|max:50|email|unique:users',
+				'email' 			=> 'required|max:128|email|unique:users',
 				'username'			=> 'required|max:25|min:3|unique:users',
 				'password'			=> 'required|min:6',
 				'confirm_password'	=> 'required|same:password'

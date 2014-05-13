@@ -2,6 +2,7 @@
 /vendor
 /public/portfolio/*
 /public/assets/img/homepage
+/public/assets/img/uploaded
 composer.phar
 .env.local.php
 .env.php
