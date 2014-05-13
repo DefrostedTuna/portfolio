@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('title')
-Home
+Rick Benett Coding - Home
 @stop
 
 @section('page-header')

@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('title')
-	{{ $homepage->first_name}} {{ $homepage->last_name }} - About
+	Rick Bennett Coding - About
 @stop
 
 @section('page-header')

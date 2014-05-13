@@ -23,7 +23,7 @@
 </div>
 <div class="container-fluid">
 
-	<div class="row content bg padding-all-20" style="margin-bottom: 20px;">
+	<div class="row col-md-12 bg" style="margin-bottom: 20px;">
 
 		<div class="padding-vertical">
 			{{ $project->description }}
