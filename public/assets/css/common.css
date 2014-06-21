@@ -4,6 +4,7 @@ body {
 	background: url('../img/bodyBG.png');
 }
 
+
 .header { /* The one that stretches all the way across the browser */
     /*--positioning--*/
     position: relative;
